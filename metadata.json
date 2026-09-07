@@ -1,0 +1,11 @@
+{
+  "name": "Prędkościomierz GPS & Mandaty",
+  "description": "Aplikacja iOS do monitorowania prędkości GPS, limitów z OpenStreetMap, kalkulatora mandatów w czasie rzeczywistym i ostrzeżeń przed utratą prawa jazdy.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+

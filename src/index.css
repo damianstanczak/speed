@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --accent-orange: #FF4F00;
+  }
+
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Space Grotesk", sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Precision Instrument & Pascal-inspired UI styling */
+.font-mono-num {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes pascalFlash {
+  0%, 100% {
+    background-color: #FF4F00;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    box-shadow: 0 0 40px rgba(255, 79, 0, 0.9);
+  }
+  50% {
+    background-color: #000000;
+    color: #FF4F00;
+    border-color: #FF4F00;
+    box-shadow: 0 0 10px rgba(255, 79, 0, 0.3);
+  }
+}
+
+.animate-license-flash {
+  animation: pascalFlash 0.45s steps(1, end) infinite;
+}
+
+/* Minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4F00;
+}
